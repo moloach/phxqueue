@@ -21,7 +21,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 #include <sys/time.h>
 #include <time.h>
 #include <unistd.h>
-
+#include <ctype.h>
 #include "phxqueue/comm/logger.h"
 
 

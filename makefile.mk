@@ -51,7 +51,7 @@ LDFLAGS := -L$(PHXRPC_LIB_DIR) -lphxrpc \
 		   $(GLOG_LIB_DIR)/libglog.a \
 		   $(GFLAGS_LIB_DIR)/libgflags.a \
            -Wl,-Bdynamic \
-		   -lrt -lz -ldl -lpthread
+		   -lrt -lz -ldl -lpthread -lsnappy -lunwind
 #PBFLAGS = --proto_path=$(PROTOBUF_INCLUDE_DIR) --proto_path=$(PHXQUEUE_INCLUDE_DIR) --cpp_out=.
 PBFLAGS := --proto_path=$(PROTOBUF_INCLUDE_DIR) --proto_path=. --cpp_out=.
 INC_COMM := -I$(PHXQUEUE_INCLUDE_DIR) -I$(GFLAGS_INCLUDE_DIR) -I$(GLOG_INCLUDE_DIR) -I$(PROTOBUF_INCLUDE_DIR) -I$(LEVELDB_INCLUDE_DIR) -I$(LIBCO_INCLUDE_DIR) -I$(PHXPAXOS_INCLUDE_DIR) \
